@@ -38,9 +38,12 @@ const Quotes = () => {
   }
 
   const handleGetAddress = () => {
-    // use api call to get address
-    let address = '192.168.1.10'
-    setAddress(address)
+    let token = localStorage.getItem("swansonToken");
+    if(!token) {
+      token = Math.random().toString(36).substring(7);
+      localStorage.setItem('swansonToken', token);
+    }
+    setAddress(token)
   }
 
   useEffect(() => {
