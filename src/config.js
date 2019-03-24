@@ -1,1 +1,1 @@
-export const API_QUOTES_URL = 'https://ron-swanson-quotes.herokuapp.com/v2'
+export const API_QUOTES_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:8080";

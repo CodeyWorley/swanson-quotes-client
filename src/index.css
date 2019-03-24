@@ -7,8 +7,139 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* main */
+html, body {
+  margin: 0;
+  height: 100%;
+  color: white;
+}
+html {
+  background: url('https://res.cloudinary.com/dcspg/image/upload/v1/images/color/C92984') no-repeat center center fixed;
+  background-color: gray; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin: 4% 0;
+  /* background-color: white; */
+}
+.swanson-logo {
+  height: 100px;
+  width: 100px;
+}
+
+/* Footer */
+footer {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 20px;
+}
+
+/* Display */
+.display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.display-info {
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+  /* background-color: #795548; */
+}
+
+/* Quotes */
+.quotes {
+  margin: 0 5%;
+  font-family: 'Germania One', cursive;
+}
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.content {
+  font-size: 30px;
+  margin: 2% 0;
+}
+.content-author {
+  font-size: 18px;
+  display: flex;
+  float: right;
+}
+.quote-btn-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 30%;
+}
+.quote-btn {
+  font-family: 'Germania One', cursive;
+  color: white;
+  font-size: 22px;
+  border: none;
+  padding: 4%;
+  margin: 2%;
+  background-image: url('https://res.cloudinary.com/dcspg/image/upload/v1/images/color/C92984');
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, .7);
+  outline: none;
+}
+
+/* Ratings */
+.rating-container {
+  display: flex;
+  margin: 6% 0;
+  align-items: center;
+  justify-content: center;
+}
+.rating-btn-container {
+  margin: 0 2%;
+}
+.btn-rating {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+.btn-rating:hover {
+  color: gold;
+}
+.fa-star {
+  font-size: 20px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+}
+.voters {
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .quote-container {
+    width: 100%;
+  }
+  .display-info {
+    width: 100%;
+  }
+  .quote-btn-container {
+    margin: 0 0 8% 0;
+  }
+  .fa-star {
+    font-size: 16px;
+  }
 }
